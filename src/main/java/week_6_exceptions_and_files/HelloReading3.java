@@ -8,7 +8,6 @@ public class HelloReading3 {
     public static void main(String[] args) {
 
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader("not_found.txt"))) {
-            ;
 
             String line;
 
