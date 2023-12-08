@@ -6,7 +6,6 @@ public class CatFactAPI {
     public static void main(String[] args) {
         String url = "https://catfact.ninja/fact";
         CatFact catFact = Unirest.get(url).asObject(CatFact.class).getBody();
-        // String catFact = Unirest.get(url).asString().getBody();
         String fact = catFact.fact;
         System.out.println("Random cat fact:\n" + fact);
         int factLength = catFact.length;
